@@ -1,8 +1,8 @@
 from django.urls import path
 
-from pragtic.accountapp.views import hello_world
+from . import views
 
 app_name = "accountapp"
 urlpatterns = [
-   path('hello_world', hello_world, name='hello_world')
+   path('hello_world/', views.hello_world, name='hello_world'),
 ]
