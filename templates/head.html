@@ -15,8 +15,11 @@
     <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
 
     <!-- font -->
-    @font-face{
-        font-family: 'NanumPen';
-        src: local('NanumPen'), url("{% static 'fonts/NanumPen' %}" format("opentype"));
-    }
+    <style>
+        @font-face{
+            font-family: 'NanumPen';
+            src: local('NanumPen'),
+            url("{% static 'fonts/NanumPen.otf' %}") format("opentype");
+        }
+    </style>
 </head>
